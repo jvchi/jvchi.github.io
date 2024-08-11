@@ -48,14 +48,9 @@ button {
     transition: 0.3s linear;
     background-color: #f8f8f8;
     color: #000000;
-    transition: 0.1s;
+    transition: 0.3s;
 }
 
-button:active {
-    transform: scaleX(1.2);
-    background-color: #000000;
-    color: #f8f8f8;
-}
 
 .troubleshoot {
     border: 1px solid #000000;
