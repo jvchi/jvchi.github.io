@@ -9,6 +9,11 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #000000;
+    overflow: auto;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 div {
@@ -42,6 +47,7 @@ button {
     padding: 10px 12px;
     transition: 0.3s linear;
     background-color: #f8f8f8;
+    color: #000000;
 }
 
 .troubleshoot {
@@ -64,4 +70,10 @@ button:hover {
 h2:hover {
     opacity: 0.5;
     cursor: pointer;
+}
+
+@media (max-width: 599px) {
+    .container {
+        transform: translateY(-50px);
+    }
 }
