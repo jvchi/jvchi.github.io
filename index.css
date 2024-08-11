@@ -48,6 +48,13 @@ button {
     transition: 0.3s linear;
     background-color: #f8f8f8;
     color: #000000;
+    transition: 0.4s;
+}
+
+button:active {
+    transform: scaleX(1.2);
+    background-color: #000000;
+    color: #f8f8f8;
 }
 
 .troubleshoot {
@@ -78,5 +85,6 @@ h2:hover {
 @media (max-width: 900px) {
     .container {
         transform: translateY(-70px);
+        overflow: hidden;
     }
 }
