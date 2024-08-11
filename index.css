@@ -21,13 +21,11 @@ div {
 .box {
     display: flex;
     justify-content: center;
-    gap: 10px;
 }
 
 h2 {
     font-size: 40px;
     font-weight: bold;
-    color: #f8f8f8;
     transition: transform, 0.3s;
     opacity: 1;
 }
@@ -45,7 +43,7 @@ button {
     transition: 0.3s linear;
     background-color: #f8f8f8;
     color: #000000;
-    transition: 0.6s;
+    transition: 0.3s linear;
 }
 
 
@@ -82,18 +80,40 @@ h2:hover {
     transition: transform 0.3s linear;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 600px) and (min-width: 100px){
     .container {
-        transform: translateY(-70px);
+        transform: translateY(-70px) scale(0.9);
         overflow: hidden;
+
     }
     h2 {
-        font-size: 45px;
+        font-size: 80px;
+        color: #f8f8f8;
+    }
+
+    button {
+        transform:translateY(-50px)
+    }
+    .box {
+        gap: 10px;
+    }
+}
+@media (min-width: 601px) and (max-width: 2000px) {
+    .container {
+        font-size: 50px;
+        transform: scale(1);
+        overflow: hidden;
+    }
+    button {
+        transform: translateY(-70px) scale(1.2);
+
+    }
+    h2 {
+        color: #939391;
+        font-size: 100px;
+    }
+    .box {
+        gap: 35px;
     }
 }
 
-@media (min-width: 600px) {
-    .container {
-        transform: scale(1.5);
-    }
-}
