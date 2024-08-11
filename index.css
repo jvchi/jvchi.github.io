@@ -12,9 +12,6 @@ body {
     overflow: auto;
 }
 
-body::-webkit-scrollbar {
-    display: none;
-}
 
 div {
     text-align: center;
@@ -48,7 +45,7 @@ button {
     transition: 0.3s linear;
     background-color: #f8f8f8;
     color: #000000;
-    transition: 0.3s;
+    transition: 0.6s;
 }
 
 
@@ -58,9 +55,17 @@ button {
 }
 
 .contact {
-    border: 1px solid #000000;
+    border: 1px solid #f8f8f8;
     padding-inline: 10px;
+    background-color: #000000;
+    color: #f8f8f8;
 }
+
+.contact:hover {
+    background-color: #f8f8f8;
+    color: #000000;
+}
+
 
 button:hover {
     background-color: #000000;
@@ -77,9 +82,18 @@ h2:hover {
     transition: transform 0.3s linear;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 599px) {
     .container {
         transform: translateY(-70px);
         overflow: hidden;
+    }
+    h2 {
+        font-size: 45px;
+    }
+}
+
+@media (min-width: 600px) {
+    .container {
+        transform: scale(1.5);
     }
 }
