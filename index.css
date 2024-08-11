@@ -101,7 +101,7 @@ h2:hover {
 @media (min-width: 601px) and (max-width: 2000px) {
     .container {
         font-size: 50px;
-        transform: scale(1);
+        transform: scale(1) translateY(-100px);
         overflow: hidden;
     }
     button {
@@ -116,4 +116,3 @@ h2:hover {
         gap: 35px;
     }
 }
-
